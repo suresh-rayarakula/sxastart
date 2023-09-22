@@ -1,0 +1,25 @@
+{
+  "files.associations": {
+    "*.sicpackage": "json"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["/sitecore.json"],
+      "url": "./.sitecore/schemas/RootConfigurationFile.schema.json"
+    },
+    {
+      "fileMatch": ["/.sitecore/user.json"],
+      "url": "./.sitecore/schemas/UserConfiguration.schema.json"
+    },
+    {
+      "fileMatch": ["*.module.json"],
+      "url": "./.sitecore/schemas/ModuleFile.schema.json"
+    }
+  ],
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/9e30fd2c-5768-4d73-943b-2275d6840af4/resourceGroups/sitecore-xm-cloud/providers/Microsoft.Web/sites/demo-linux-nextjs-app",
+  "appService.deploySubpath": "/src/sxastarter"
+}
